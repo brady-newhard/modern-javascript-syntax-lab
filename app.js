@@ -13,7 +13,7 @@ const allNumsTimesTwo = nums.map((num) => {
     return `${num}` * 2;
   });
   
-  console.log("Excercise 1:", allNumsTimesTwo); 
+console.log("Excercise 1:", allNumsTimesTwo); 
 
 // ! Exercise 2:
 // a. Given the provided `pizzaToppings` array, use destructuring to extract 
@@ -91,7 +91,11 @@ const userProfile = {
 };
 
 console.log("Excercise 6:", userProfile);
-  
+
+// ! Exercise 7:
+
+console.log("Excercise 7: Run node importingFile.js");
+
  // ! Exercise 8:
 // a. Create a function with two parameters, `noun` and `adjective`.
 // 
@@ -104,7 +108,8 @@ console.log("Excercise 6:", userProfile);
 
 function sentence(noun = 'cat', adjective = 'orange') {
     console.log("Exercise 8:", `The ${noun} is ${adjective}.`);
-  } 
+} 
+
 sentence()
 sentence("dog", "brown");
 
@@ -118,10 +123,64 @@ sentence("dog", "brown");
 //    }
 
 const pizza = 'tasty';
-
 let currentPizza = pizza === 'tasty' ? 'yum' : 'yuck';
 
 console.log("Excercise 9:", currentPizza);
 
+// ! Exercise 10:
+// ! 10.1: Set language
+// a. Construct a single line of code that assigns a default value using the 
+//    logical OR operator. This line should match the logic of the following 
+//    statement:
+//
+//    "lang is equal to localLangConfig or the default value of English."
+//
+// b. Create a variable called `lang`.
+//
+// c. Assign `lang` the value of localLangConfig or 'en' as a default if 
+//    `localLangConfig is falsy.
+//
+// d. Log the value of `lang` to the console.
+//
+// Your code here (localLangConfig is provided to get you started):
 
+// Simulated language configuration (change this variable to test)
 
+const localLangConfig = "fr";// Change to 'es', 'fr', etc., or leave it `null`.
+const lang = localLangConfig || 'en';
+
+console.log("Excercise 10.1:", lang);
+
+// ! 10.2: Set website theme
+// Intro: In this exercise, you'll construct a single line of code that assigns 
+//        a default value to a variable named `theme` using the logical OR 
+//        operator. This line should match the logic of the following statement:
+//
+//        "theme is equal to savedUserTheme or the default value of light."
+//
+// a. Create a variable called `theme`.
+//
+// b. Assign `theme` the value of `savedUserTheme` or 'light' as a default.
+//
+// c. Log the value of `theme` to the console.
+//
+// Your code here (`savedUserTheme` is provided to get you started):
+
+// Simulated user theme preference (change this variable to test)
+
+const savedUserTheme = "dark"; // Change to 'dark', etc., or leave it `null`.
+const theme = savedUserTheme || 'light';
+
+console.log("Excercise 10.2:", theme);
+
+// ! Exercise 11:
+// a. Use optional chaining in a console.log so that a console log of
+//    `adventurer.cat.age` returns `undefined` instead of an error.
+
+const adventurer = {
+    name: 'Alice',
+  };
+  
+let cat = adventurer.cat?.age; 
+
+console.log("Excercise 11:", cat); 
