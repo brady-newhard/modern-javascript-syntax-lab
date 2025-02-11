@@ -10,7 +10,7 @@
 const nums = [13, 87, 2, 89, 12, 4, 90, 63];
 
 const allNumsTimesTwo = nums.map((num) => {
-    return `${num}` * 2;
+    return num * 2;
   });
   
 console.log("Excercise 1:", allNumsTimesTwo); 
